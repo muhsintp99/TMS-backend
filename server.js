@@ -17,7 +17,7 @@ app.use(express.json());
 app.use('/api/tasks', taskRoutes);
 
 app.get('/', (req, res) => {
-    res.send('Task Manager API is running');
+    res.send('Task Manager API is running (use /api/tasks)');
   });
 
 const PORT = process.env.PORT || 8000;
